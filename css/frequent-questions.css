@@ -1,0 +1,197 @@
+.frequent-questions-pb {
+    padding-bottom: 98px;
+}
+.frequent-questions__heading {
+    margin-bottom: 41px;
+}
+.frequent-questions__questions-block{ 
+    display: flex;
+    flex-flow: column nowrap;
+    margin: 0;
+
+}
+/* question block */
+.frequent-questions__question {
+    display: flex;
+    flex-flow: column nowrap;
+    border-top: 1px solid var(--form-font-color);
+    border-bottom: 1px solid transparent;
+    transition: border-top .4s ease, border-bottom .4s ease;
+}
+
+.frequent-questions__question:last-child{
+    border-bottom: 1px solid var(--form-font-color)
+}
+.top-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    transition: color .4s ease;
+
+}
+.top-block:hover .top-block__heading {
+    color: var(--yellow-color);
+    cursor: pointer;
+}
+.top-block:focus .top-block__heading {
+    color: var(--yellow-color);
+    cursor: pointer;
+}
+.frequent-questions__question:hover .top-block__cross-block {
+    background-color: #D2D2D2;
+}
+.frequent-questions__question:focus .top-block__cross-block {
+    background-color: #D2D2D2;
+}
+.frequent-questions__question:hover {
+    border-top: 1px solid var(--yellow-color);
+    border-bottom: 1px solid var(--yellow-color);
+    z-index: 43;
+}
+
+
+.frequent-questions__text-block {
+    padding-bottom: 40px;
+    width: 55%;
+}
+.top-block__heading {
+    max-width: 78%;
+    transition: color .4s ease;
+}
+
+.top-block__cross-block {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    background-color: #ececec;
+    border-radius: 50%;
+    transition: .4s ease-in-out; 
+}
+.top-block__cross-block:before, .top-block__cross-block:after {
+    content: ' ';
+    position: absolute;
+    height: 33px;
+    width: 1px;
+    top: 9px;
+    left: 25px;
+    background-color: #666;
+}
+.top-block__cross-block:after {
+    transform: rotate(90deg);
+    transition: .4s ease-in-out;
+}
+.top-block__cross-block:before {
+    transition: .4s ease-in-out;
+
+}
+.disabled-block {
+    display: none;
+}
+@media(min-width: 1601px) {
+    .frequent-questions__question {
+        min-height: 108px;
+    }
+    .top-block__heading {
+        padding: 39px 5px;
+    }
+}
+@media(min-width: 320px) and (max-width: 767px) {
+    .top-block__heading {
+        font-size: 14px;
+    }
+    .frequent-questions__text-block {
+        width: 100%;
+        font-size: 12px;
+    }
+    .top-block__cross-block {
+        width: 30px;
+        height: 30px;
+    }
+    .top-block__cross-block:before, .top-block__cross-block:after {
+        height: 23px;
+        width: 1px;
+        top: 4px;
+        left: 15px;
+    }
+    .second-block__wrap {
+        border: none;
+    }
+    .frequent-questions__heading {
+        margin-bottom: 13px;
+    }
+    .frequent-questions-pb {
+        padding-bottom: 61px;
+    }
+    .frequent-questions__question {
+        justify-content: center;
+        line-height: 24px;
+        padding: 10.2% 0;
+    }
+}
+@media(min-width: 1024px) and (max-width: 1600px) {
+    .top-block__heading {
+        padding: 0;
+        max-width:79%;
+        font-size: 20px;
+
+    }
+    .frequent-questions-pb {
+        padding-bottom: 80px;
+    }
+    .frequent-questions__text-block {
+        width: 90%;
+    }
+    .frequent-questions__heading {
+        margin-bottom: 29px;
+    }
+    .frequent-questions__question {
+        justify-content: center;
+        line-height: 32px;
+        padding: 3.2% 0;
+    }
+}
+@media(min-width: 768px) and (max-width: 1023px) {
+    .top-block__heading {
+        max-width: 82%;
+        padding: 0;
+        font-size: 20px;
+
+    }
+    .frequent-questions-pb {
+        padding-bottom: 59px;
+    }
+    .frequent-questions__text-block {
+        width: 90%;
+    }
+    .frequent-questions__heading {
+        margin-bottom: 29px;
+    }
+    .frequent-questions__question {
+        justify-content: center;
+        padding: 4.4% 0;
+        line-height: 32px;
+    }
+}
+.frequent-questions__question:hover .top-block__cross-block {
+    background-color: var(--yellow-color);
+}
+.frequent-questions__question:hover .top-block__cross-block::after {
+    background-color: #fff;
+}
+.frequent-questions__question:hover .top-block__cross-block::before {
+    background-color: #fff;
+}
+/* active */
+.ui-state-active .top-block__cross-block::before {
+    transform: rotate(-45deg);
+    background-color: var(--text-font-color);
+
+}
+.ui-state-active .top-block__cross-block::after {
+    transform: rotate(45deg);
+    background-color: var(--text-font-color);
+}
+.ui-state-active .top-block__cross-block {
+    background-color: transparent;
+}

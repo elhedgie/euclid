@@ -1,0 +1,345 @@
+
+.about-us-mb {
+    margin-bottom: 101px;
+}
+.about-us__heading {
+    margin-bottom: 19px;
+}
+.about-us__text {
+    padding: 0;
+    margin-bottom: 43px;
+    width: 70%;
+}
+
+/* advantages block styles */
+.about-us__advantages {
+    display: flex;
+    padding: 0;
+}
+.advantages__first-block {
+    display: flex;
+    align-items: flex-end;
+    background-image: url('../img/jpg/Rectangle\ 2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.advantages__info {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 52px;
+    padding-bottom: 51px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.advantages__text {
+    width: 56%;
+    font-size: 17px;
+    line-height: 31px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.advantages__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 169px;
+    min-height: 55px;
+    font-weight: 700;
+    color: #fff;
+    border: 3px solid var(--yellow-color);
+    transition: background-color .4s ease, border-color .4s ease
+}
+.advantages__link:hover {
+    background-color: var(--yellow-color);
+    text-decoration: none;
+}
+.advantages__link:focus {
+    background-color: var(--yellow-color);
+    text-decoration: none;
+}
+.advantages__link:active {
+    background-color: var(--clicked-btn-color);
+    border-color: var(--clicked-btn-color);
+    text-decoration: none;
+}
+.advantages__second-block {
+    display: flex;
+    flex-flow: column nowrap;
+   
+}
+.second-block__wrap {
+    display: flex;
+    justify-content: flex-end;
+    flex: 1 1 auto;
+    max-height: 50%;
+    background-repeat: no-repeat;
+    border: 1px solid #e5e5e5;
+}
+
+.second-block__wrap_top {
+    margin-bottom: 30px;
+    padding-bottom: 73px;
+    background-image: url('../img/svg/Group\ 25.svg');
+    background-size: 190px;
+    background-position: 57px 70px;   
+}
+
+.second-block__wrap_bottom {
+    background-image: url('../img/svg/Group\ 24.svg');
+    background-size: 190px;
+    background-position: 59px 67px;
+}
+
+.second-block__text {
+    width: 66%;
+}
+
+.second-block__bold-text {
+    display: block;
+    font-size: 25px;
+}
+
+.second-block__small-text {
+    width: 74%;
+}
+/* tooltip */
+.tooltip {
+    display: inline-block;
+    position: relative;
+    padding-left: 20px;
+    width: 104px;
+    background-image: url('../img/svg/tooltip.svg');
+    background-repeat: no-repeat;
+    background-size: 16px;
+    background-position: 1px 8px;
+}
+
+.tooltip-text {
+    display: block;
+    position: absolute;
+    padding: 10px 20px 20px 20px;
+    z-index: 3;
+    opacity: 0;
+    width: 100px;
+    background-color: #333;
+    color: #fff;
+    border-radius: 10px;
+    transition: opacity .4s ease-in;
+}
+
+.tooltip:hover .tooltip-text {
+    opacity: .8;
+}
+/* media */
+@media(min-width:1601px) {
+    .advantages__second-block {
+        width: 49%;
+    }
+    .advantages__first-block {
+        margin-right: 2%;
+        width: 49%;
+    }
+    .second-block__wrap_bottom {
+        padding-top: 67px;
+        padding-bottom: 66px;
+    }
+    .second-block__wrap_top {
+        padding-top: 74px;
+    }
+}
+@media(min-width: 1024px) and (max-width: 1600px) {
+    .about-us__text {
+        margin-bottom: 62px;
+        padding: 0;
+        width: 100%;
+        line-height: 32px;
+    }
+    .about-us__heading {
+        margin-bottom: 6px;
+    }
+    .about-us__advantages {
+        flex-flow: column nowrap;
+    }
+    .advantages__first-block {
+        display: flex;
+        align-items: flex-end;
+        margin-bottom: 32px;
+        min-height: 640px;
+        background-image: url('../img/jpg/Rectangle\ 2.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .advantages__text {
+        width: 59%;
+    }
+    .second-block__wrap_top {
+        padding-bottom: 71px;
+        background-position: 76px 65px;
+        padding-top: 66px;
+    }
+    .second-block__wrap_bottom {
+        padding-top: 68px;
+        padding-bottom: 70px;
+        background-position: 76px 67px;
+    }
+    .about-us-mb {
+        margin-bottom: 85px;
+    }
+    
+}
+@media(min-width: 768px) and (max-width: 1023px) {
+    .about-us__text {
+        margin-bottom: 43px;
+        padding: 0;
+        width: 100%;
+        line-height: 32px;
+    }
+    .about-us__advantages {
+        display: flex;
+        flex-flow: column nowrap;
+        padding: 0;
+    }
+    .advantages__first-block {
+        display: flex;
+        align-items: flex-end;
+        margin-bottom: 32px;
+        min-height: 399px;
+        background-image: url('../img/jpg/Rectangle\ 2.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .advantages__second-block {
+        display: flex;
+        flex-flow: column nowrap;
+    }
+    .about-us__heading {
+        margin-bottom: 6px;
+    }
+    .about-us__text {
+        margin-bottom: 59px;
+    }
+    .advantages__first-block {
+        display: flex;
+        align-items: flex-end;
+        margin-bottom: 32px;
+        min-height: 655px;
+        background-image: url(../img/jpg/Rectangle\ 2.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .second-block__wrap_top {
+        margin-bottom: 37px;
+        padding: 0;
+        background-size: 193px 99px;
+        background-position: 0 62px;
+    }
+    .second-block__text {
+        padding: 32px 0;
+        width: 75%;
+        line-height: 35px;
+    }
+    .second-block__wrap_bottom {
+        background-size: 113px;
+        background-position: 40px 65px;
+    }
+    .second-block__small-text {
+        width: 85%;
+    }
+    .about-us-mb {
+        margin-bottom: 87px;
+    }
+    .advantages__info {
+        justify-content: space-evenly;
+        padding-top: 35px;
+        padding-bottom: 42px;
+    }
+}
+@media(min-width: 320px) and (max-width: 767px) {
+    .about-us__text {
+        margin-bottom: 14px;
+        padding: 0;
+        width: 100%;
+        line-height: 28px;
+    }
+    .about-us__advantages {
+        display: flex;
+        flex-flow: column nowrap;
+        padding: 0;
+    }
+    .advantages__first-block {
+        display: flex;
+        align-items: flex-end;
+        margin-bottom: 28px;
+        min-height: 402px;
+        background-image: url('../img/jpg/Rectangle\ 2.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        
+    }
+    .advantages__second-block {
+        display: flex;
+        flex-flow: column nowrap;
+    }
+    .advantages__first-block {
+        background-size: contain;
+    }
+    .advantages__second-block {
+        display: flex;
+        flex-flow: column nowrap;
+    }
+    .advantages__info {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: flex-start;
+        padding: 0;
+        background-color: #fff;
+    }
+    .advantages__text {
+        margin-left: 0;
+        margin-bottom: 8px;
+        padding: 0;
+        width: 100%;
+        color: var(--text-font-color);
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 30px;
+    }
+    .advantages__link {
+        width: 158px;
+        min-height: 36px;
+        font-size: 14px;
+        color: var(--yellow-color)
+    }
+    .second-block__text {
+        padding-top: 66px;
+        width: 100%;
+    }
+    .second-block__bold-text {
+        font-size: 19px;
+        font-weight: 500;
+    }
+    .second-block__small-text {
+        width: 100%;
+    }
+    .second-block__wrap_top {
+        padding: 0;
+        background-size: 65px 56px;
+        background-position: 0 0;
+    }
+    .second-block__wrap_bottom {
+        padding: 0;
+        background-size: 65px 56px;
+        background-position: 0 0;
+    }
+    .about-us-mb {
+        margin-bottom: 69px;
+    }
+    .about-us__heading {
+        margin-bottom: 17px;
+    }
+    
+}
